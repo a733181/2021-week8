@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title><%- title %></title>
+    <title>立即預約</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
     <link rel="stylesheet" href="./assets/style/all.css" />
@@ -78,7 +78,130 @@
         <li><a href="#" class="link-primary"><i class="fab fa-line fa-3x"></i></a></li>
       </ul>
     </div>
-    <%- contents %>
+    
+<div class="container text-center">
+  <h1 class="fs-3 fw-normal mt-10 mb-3">立即預約</h1>
+  <!-- 進度表 -->
+  <ul class="row mb-7 list-unstyled">
+    <li class="col-4 col-md-2 offset-md-3">
+      <p class="bg-primary rounded-3 text-white w-100 py-3">選擇方案</p>
+    </li>
+    <li class="col-4 col-md-2">
+      <p class="bg-secondary rounded-3 text-primary w-100 py-3">填寫資料</p>
+    </li>
+    <li class="col-4 col-md-2">
+      <p class="bg-secondary rounded-3 text-primary w-100 py-3">完成預約</p>
+    </li>
+  </ul>
+  <div class="row mb-7">
+    <!-- 首次體驗 -->
+    <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+      <div class="card rounded-3 border-light overflow-hidden">
+        <div class="row g-0">
+          <div class="col-md-6 col-lg-12">
+            <a href="reserve.-base.html" class="hover">
+              <img
+                src="./assets/images/woman in white tank top and white leggings bending her body.jpg"
+                class="card-img-top object-fit-cover card-img-l"
+                alt="首次體驗"
+              />
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-12">
+            <div class="card-body px-4 py-7">
+              <h3 class="card-title fw-normal fs-5 mb-1">首次體驗</h3>
+              <h4 class="card-subtitle fw-normal fs-5 text-light mb-2">
+                NT $450 / 次
+              </h4>
+              <p class="card-text mb-8 text-start">
+                分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。
+              </p>
+              <a
+                href="reserve.-base.html"
+                class="btn btn-primary text-white w-100"
+                >選擇課程</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 短期體驗 -->
+    <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+      <div class="card rounded-3 border-light overflow-hidden">
+        <div class="row g-0">
+          <div class="col-md-6 col-lg-12">
+            <a href="#" class="hover">
+              <img
+                src="./assets/images/woman performing yoga.jpg"
+                class="card-img-top object-fit-cover card-img-l"
+                alt="短期體驗"
+              />
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-12">
+            <div class="card-body px-4 py-7">
+              <h3 class="card-title fw-normal fs-5 mb-1">短期體驗</h3>
+              <h4 class="card-subtitle fw-normal fs-5 text-light mb-2">
+                NT $1800 / 月
+              </h4>
+              <p class="card-text mb-8 text-start">
+                分基礎、中級、高級可以選擇。想試著培養瑜珈習慣者可以選擇此方案。
+              </p>
+              <a href="#" class="btn btn-primary text-white w-100">選擇課程</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 長期體驗 -->
+    <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+      <div class="card rounded-3 border-light overflow-hidden">
+        <div class="row g-0">
+          <div class="col-md-6 col-lg-12">
+            <a href="#" class="hover">
+              <img
+                src="./assets/images/woman in blue leggings and black tank top doing yoga.jpg"
+                class="card-img-top object-fit-cover card-img-l"
+                alt="長期體驗"
+              />
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-12">
+            <div class="card-body px-4 py-7">
+              <h3 class="card-title fw-normal fs-5 mb-1">長期體驗</h3>
+              <h4 class="card-subtitle fw-normal fs-5 text-light mb-2">
+                NT $5600 / 季
+              </h4>
+              <p class="card-text mb-8 text-start">
+                分基礎、中級、高級可以選擇。有長期習慣做瑜伽者建議選擇此方案。
+              </p>
+              <a href="#" class="btn btn-primary text-white w-100">選擇課程</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 預約須知 -->
+  </div>
+  <h2 class="fs-3 fw-normal mb-3">預約須知</h2>
+  <ol class="text-start w-100 w-lg-50 mx-auto mb-11">
+    <li class="mb-1">如果有特殊體質、特殊狀況，請主動告知。</li>
+    <li class="mb-1">
+      取消預約或時間異動請於預約日前一天晚間 21:00
+      前告知，預約當日請勿異動或取消，以免影響您日後再預約的個人信用及難度。
+    </li>
+    <li class="mb-1">
+      為維護上課品質，請遵守 DOYOGA
+      各項參觀規定，未遵守規定者，本公司保留謝絕入館之權利。
+    </li>
+    <li>
+      DOYOGA
+      保留修改預約須知之權利，修改後的條款將公佈於本網站上，不另外個別通知。如果您繼續在本網站進行參觀預約，就表示您已經了解、並同意遵守修改後的約定條款。
+    </li>
+  </ol>
+</div>
+
     <!-- Modal -->
 <div
 class="modal fade"
