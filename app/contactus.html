@@ -1,0 +1,77 @@
+---
+title: 聯絡我們
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<div class="container">
+  <h1 class="text-center fs-3 fw-bold mt-10 mb-7">聯絡我們</h1>
+  <div class="row mb-11">
+    <!-- 教室位置 -->
+    <div class="col-md-10 col-lg-7 offset-md-1 offset-lg-0 mb-8 mb">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14731.20796360699!2d120.30901477897527!3d22.623868211335836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e049783205c61%3A0xebaf934b04f62525!2zODAy6auY6ZuE5biC6IuT6ZuF5Y2A!5e0!3m2!1szh-TW!2stw!4v1629702320106!5m2!1szh-TW!2stw"
+        allowfullscreen=""
+        loading="lazy"
+        class="height-m w-100 mb-4"
+      ></iframe>
+      <h2 class="fs-4 mb-2">DOYOGA 教室位置</h2>
+      <p class="mb-2">高雄市苓雅區北信街 23 號 2 樓</p>
+      <p class="mb-2">如何前往：</p>
+      <ol>
+        <li class="mb-4">
+          搭乘捷運：紅線到正義站 3 號出口，延正義路方向至北信街交叉口即可。
+        </li>
+        <li class="mb-4">
+          搭乘公車：搭這些公車都可以抵達正義站 24B 25 33 50 76 77 77區 100
+        </li>
+        <li>開車前往北信街 32 號，教室旁有專屬停車場可以使用。</li>
+      </ol>
+    </div>
+    <!-- 意見回饋&問題詢問 -->
+    <div class="col-md-10 col-lg-5 offset-md-1 offset-lg-0">
+      <div class="fw-normal bg-secondary rounded-3 p-7">
+        <h2 class="fs-5 fw-normal mb-4">意見回饋&問題詢問</h2>
+        <form>
+          <div class="mb-3">
+            <label for="opinionName" class="form-label mb-2">姓名</label>
+            <input
+              type="text"
+              class="form-control"
+              id="opinionName"
+              placeholder="請輸入您的姓名"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="opinionEmail" class="form-label mb-2">電子信箱</label>
+            <input
+              type="email"
+              class="form-control"
+              id="opinionEmail"
+              placeholder="email@example.com"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="opinionMobile" class="form-label mb-2">手機號碼</label>
+            <input
+              type="text"
+              class="form-control"
+              id="opinionMobile"
+              placeholder="0912-345-678"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="opiniontext" class="form-label mb-2">意見回饋</label>
+            <textarea class="form-control height-s" id="opiniontext"></textarea>
+          </div>
+          <div class="d-flex justify-content-end">
+            <button type="submit" class="btn btn-primary text-white">
+              送出
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,247 @@
+---
+title: 立即預約
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<div class="container text-center fw-normal">
+  <h1 class="fs-3 mt-10 mb-3">立即預約</h1>
+  <!-- 進度表 -->
+  <ul class="row mb-7 list-unstyled">
+    <li class="col-4 col-md-2 offset-md-3">
+      <p class="bg-secondary rounded-3 text-primary w-100 py-3">選擇方案</p>
+    </li>
+    <li class="col-4 col-md-2">
+      <p class="bg-primary rounded-3 text-white w-100 py-3">填寫資料</p>
+    </li>
+    <li class="col-4 col-md-2">
+      <p class="bg-secondary rounded-3 text-primary w-100 py-3">完成預約</p>
+    </li>
+  </ul>
+  <div class="row mb-11">
+    <h2 class="fs-6 text-dark mb-7">
+      您選擇的是
+      <span class="ms-3 fs-5 text-light">首次體驗課程-基礎</span>
+    </h2>
+    <div class="col-md-6 col-lg-4 offset-md-3 offset-lg-4 text-dark text-start">
+      <form>
+        <!-- 1. 是否接觸過瑜珈? -->
+        <label class="form-label d-block mb-3">1. 是否接觸過瑜珈?</label>
+        <!-- 是 -->
+        <div class="form-check form-check-inline me-7 mb-7">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="doyogoFirst"
+            id="doyogoFirstFalse"
+            value="false"
+            checked
+          />
+          <label class="form-check-label" for="doyogoFirstFalse"> 是 </label>
+        </div>
+        <!-- 否 -->
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="doyogoFirst"
+            id="doyogoFirstTure"
+            value="ture"
+          />
+          <label class="form-check-label" for="doyogoFirstTure"> 否 </label>
+        </div>
+        <!-- 2. 想改善的生活問題? -->
+        <label class="form-label d-block mb-3">2. 想改善的生活問題?</label>
+        <!-- 肌耐力不足 -->
+        <div class="form-check form-check-inline me-3">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="question1"
+            value="肌耐力不足"
+          />
+          <label class="form-check-label" for="question1">肌耐力不足</label>
+        </div>
+        <!-- 柔軟度不佳 -->
+        <div class="form-check form-check-inline me-3">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="question2"
+            value="柔軟度不佳"
+          />
+          <label class="form-check-label" for="question2">柔軟度不佳</label>
+        </div>
+        <!-- 壓力大 -->
+        <div class="form-check form-check-inline mb-3">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="question3"
+            value="壓力大"
+          />
+          <label class="form-check-label" for="question3">壓力大</label>
+        </div>
+        <!-- 姿勢不正 -->
+        <div class="form-check form-check-inline mb-3">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="question4"
+            value="姿勢不正"
+          />
+          <label class="form-check-label" for="question4">姿勢不正</label>
+        </div>
+        <!-- 睡眠品質差 -->
+        <div class="form-check form-check-inline mb-3">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="question5"
+            value="睡眠品質差"
+          />
+          <label class="form-check-label" for="question5">睡眠品質差</label>
+        </div>
+        <!-- 注意力不足 -->
+        <div class="form-check form-check-inline me-0 mb-7">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="question6"
+            value="注意力不足"
+          />
+          <label class="form-check-label" for="question6">注意力不足</label>
+        </div>
+        <!-- 3. 每週累積運動量約為多少？ -->
+        <label class="form-label d-block mb-3"
+          >3. 每週累積運動量約為多少？</label
+        >
+        <!-- 150 分鐘以上 -->
+        <div class="form-check form-check-inline me-7">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="time"
+            id="150"
+            value="150 分鐘以上"
+            checked
+          />
+          <label class="form-check-label" for="150"> 150 分鐘以上 </label>
+        </div>
+        <!-- 75~150 分鐘 -->
+        <div class="form-check form-check-inline me-7">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="time"
+            id="75"
+            value="75~150 分鐘"
+          />
+          <label class="form-check-label" for="75"> 75~150 分鐘 </label>
+        </div>
+        <!-- 30~75 分鐘 -->
+        <div class="form-check form-check-inline me-7">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="time"
+            id="30"
+            value="30~75 分鐘"
+          />
+          <label class="form-check-label" for="30"> 30~75 分鐘</label>
+        </div>
+        <!-- 30 分鐘以下 -->
+        <div class="form-check form-check-inline me-7 mb-7">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="time"
+            id="30down"
+            value="30 分鐘以下"
+          />
+          <label class="form-check-label" for="30down"> 30 分鐘以下</label>
+        </div>
+        <!-- 4. 上課預約報到日 -->
+        <label class="form-label d-block mb-3">4. 上課預約報到日</label>
+        <!-- 若還沒有確定的日期，可以等待專員與您聯絡時再做詳細的諮詢哦！ -->
+        <!-- 日期 -->
+        <div class="mb-7">
+          <label for="date" class="form-label mb-2"
+            >若還沒有確定的日期，可以等待專員與您聯絡時再做詳細的諮詢哦！</label
+          >
+          <input
+            type="text"
+            class="form-control text-primary w-50"
+            id="date"
+            name="datepicker"
+            placeholder="MM/DD/YYYY"
+          />
+        </div>
+        <!-- 5. 填寫基本資料，完成預約後會寄送通知至電子信箱 -->
+        <label class="form-label d-block mb-3"
+          >5. 填寫基本資料，完成預約後會寄送通知至電子信箱</label
+        >
+        <div class="d-flex text-primary mb-3">
+          <!-- 姓名 -->
+          <div class="me-2">
+            <label for="doyogoName" class="form-label">姓名</label>
+            <input
+              type="text"
+              class="form-control d-block"
+              id="doyogoName"
+              placeholder="請輸入您的姓名"
+            />
+          </div>
+          <!-- 年齡 -->
+          <div>
+            <label for="doyogoAge" class="form-label">年齡</label>
+            <input
+              type="text"
+              class="form-control d-block"
+              id="doyogoAge"
+              placeholder="請輸入您的年齡"
+            />
+          </div>
+        </div>
+        <!-- 性別 -->
+        <div class="text-primary mb-3">
+          <label class="form-label d-block mb-3" for="doyogoGender">性別</label>
+          <select
+            class="form-select w-50"
+            aria-label=".form-select-sm"
+            id="doyogoGender"
+          >
+            <option value="女">女</option>
+            <option value="男">男</option>
+          </select>
+        </div>
+        <!-- 電子信箱 -->
+        <div class="text-primary mb-3">
+          <label for="doyogoEmail" class="form-label">電子信箱</label>
+          <input
+            type="email"
+            class="form-control"
+            id="doyogoEmail"
+            placeholder="email@example.com"
+          />
+        </div>
+        <!-- 手機號碼 -->
+        <div class="text-primary mb-7">
+          <label for="doyogoMobile" class="form-label">手機號碼</label>
+          <input
+            type="text"
+            class="form-control"
+            id="doyogoMobile"
+            placeholder="0912-345-678"
+          />
+        </div>
+        <a
+          href="reserve-3.html"
+          class="btn btn-light d-block w-100 text-white fs-5 py-2"
+          >送出</a
+        >
+      </form>
+    </div>
+  </div>
+</div>
