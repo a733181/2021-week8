@@ -22,9 +22,6 @@
 }
 
 // width
-.w-39 {
-  width: 39%;
-}
 .w-lg-50 {
   @include media-breakpoint-up(lg) {
     width: 50% !important;
