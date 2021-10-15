@@ -1,37 +1,36 @@
-// position
-.position-lg-absolute {
-  @include media-breakpoint-up(lg) {
-    position: absolute;
-  }
-}
-.position-md-absolute {
-  @include media-breakpoint-up(md) {
-    position: absolute;
-  }
-}
-// transform
-.translate-lg-middle {
-  @include media-breakpoint-up(lg) {
-    transform: translate(-50%, -50%);
-  }
-}
-.translate-md-middle-x {
-  @include media-breakpoint-up(md) {
-    transform: translateX(-50%);
-  }
-}
+$utilities: map-merge(
+  $utilities,
+  (
+    "position": (
+      responsive: true,
+      property: position,
+      values: static relative absolute fixed sticky,
+    ),
+    "translate-middle": (
+      responsive: true,
+      property: transform,
+      class: translate-middle,
+      values: (
+        null: translate(-50%, -50%),
+        x: translateX(-50%),
+        y: translateY(-50%),
+      ),
+    ),
+    "width": (
+      responsive: true,
+      property: width,
+      class: w,
+      values: (
+        25: 25%,
+        50: 50%,
+        75: 75%,
+        100: 100%,
+        auto: auto,
+      ),
+    ),
+  )
+);
 
-// width
-.w-lg-50 {
-  @include media-breakpoint-up(lg) {
-    width: 50% !important;
-  }
-}
-.w-lg-100 {
-  @include media-breakpoint-up(lg) {
-    width: 100% !important;
-  }
-}
 // bg
 .bg-cover {
   background-size: cover;

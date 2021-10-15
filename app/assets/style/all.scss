@@ -1,9 +1,14 @@
 @import "../../../node_modules/bootstrap/scss/functions";
+
 @import "./base/base";
+
 @import "./helpers/variables";
+
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/utilities";
+@import "./utils/utilities";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
-@import "./utils/utilities";
 @import "./utils/helpers";
 
 @import "./components/card";

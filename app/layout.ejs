@@ -14,9 +14,9 @@
     <!-- nav-bar -->
     <header class="bg-secondary">
       <nav
-        class="navbar navbar-expand-lg container navbar-light position-relative py-5"
+        class="navbar navbar-expand-lg navbar-light position-relative py-5"
       >
-        <div class="container-fluid justify-content-lg-end">
+        <div class="container justify-content-lg-end">
           <!-- logo -->
           <a
             href="index.html"
@@ -46,13 +46,13 @@
                 position-lg-absolute
                 top-50
                 start-50
-                translate-lg-middle
+                translate-middle-lg
               "
             >
-              <li class="nav-item me-lg-7">
+              <li class="nav-item pe-lg-7">
                 <a class="nav-link link-dark fw-light" href="course.html">課程介紹</a>
               </li>
-              <li class="nav-item me-lg-7">
+              <li class="nav-item pe-lg-7">
                 <a class="nav-link link-dark fw-light" href="surroundings.html">瑜珈空間</a>
               </li>
               <li class="nav-item mb-3 mb-lg-0">
@@ -72,7 +72,7 @@
       </nav>
     </header>
     <div class="position-fixed top-50 end-0">
-      <ul class="d-none d-xl-flex flex-column align-items-center list-unstyled me-3">
+      <ul class="d-none d-xl-block list-unstyled me-3">
         <li class="mb-2"><a href="#" class="link-primary"><i class="fab fa-facebook fa-3x"></i></a></li>
         <li class="mb-2"><a href="#" class="link-primary"><i class="fab fa-instagram fa-3x"></i></a></li>
         <li><a href="#" class="link-primary"><i class="fab fa-line fa-3x"></i></a></li>
@@ -199,13 +199,16 @@ aria-hidden="true"
             <a href="#" class="link-white hover fs-4"><i class="fab fa-line"></i></a>
           </div>
         </div>
-        <a href="course.html" class="text-white hover mb-2 d-block fw-light">課程介紹</a>
-        <a href="surroundings.html" class="text-white hover mb-2 d-block fw-light" >瑜珈空間</a>
-        <div class="d-flex flex-column flex-md-row">
-          <a href="curriclum.html" class="text-white hover fw-light mb-2 mb-lg-0">當月課表</a>
-          <p class="position-md-absolute
-          start-50 translate-md-middle-x">© 2021. All Rights Reserved.</p>
-        </div>
+        <ul class="list-unstyled">
+          <li>
+            <a href="course.html" class="text-white hover mb-2 d-block fw-light">課程介紹</a></li>
+          <li>
+            <a href="surroundings.html" class="text-white hover mb-2 d-block fw-light" >瑜珈空間</a></li>
+          <li class="d-flex flex-column flex-md-row">
+            <a href="curriclum.html" class="text-white hover fw-light mb-2 mb-lg-0">當月課表</a>
+            <p class="position-md-absolute
+            start-50 translate-middle-md-x">© 2021. All Rights Reserved.</p></li>
+        </ul>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>

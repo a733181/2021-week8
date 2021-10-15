@@ -1,4 +1,4 @@
-const swiper = new Swiper(".mySwiper", {});
+const swiper = new Swiper(".swiper-container", {});
 
 const customSwiper = new Swiper(".customSwiper", {
   slidesPerView: 1,
@@ -76,8 +76,8 @@ const courseSwiper = new Swiper(".courseSwiper", {
   },
 });
 
-const elem = document.querySelector('input[name="datepicker"]');
-const datepicker = new Datepicker(elem, {
+const arrow = document.querySelector('input[name="datepicker"]');
+const datepicker = new Datepicker(arrow, {
   nextArrow: ">",
   prevArrow: "<",
   buttonClass: "btn primary",
